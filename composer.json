@@ -1,5 +1,5 @@
 {
-    "name": "joggapp/laravel-google-translate",
+    "name": "dstuchbury/laravel-google-translate",
     "description": "Laravel package for the Google Translate API",
     "keywords": [
         "laravel",
@@ -13,7 +13,13 @@
     "authors": [
         {
             "name": "Harish Toshniwal",
-            "email": "harish@jogg.co"
+            "homepage": "https://github.com/JoggApp/laravel-google-translate",
+            "role": "original package creator"
+        },
+        {
+            "name": "Dan Stuchbury",
+            "email": "dan@danstuchbury.com",
+            "homepage": "https://danstuchbury.com"
         }
     ],
     "autoload": {

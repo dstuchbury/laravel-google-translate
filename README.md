@@ -1,11 +1,10 @@
-# This package is no longer actively developed. [More details here/Call for maintainers](https://github.com/JoggApp/laravel-google-translate/discussions/51)
-
-
 # Laravel package for the Google Translate API
 
-[![Latest Version](https://img.shields.io/github/release/JoggApp/laravel-google-translate.svg?style=flat-rounded)](https://github.com/JoggApp/laravel-google-translate/releases)
-![](https://github.com/JoggApp/laravel-google-translate/workflows/Run%20Tests/badge.svg?branch=master)
-[![Total Downloads](https://img.shields.io/packagist/dt/JoggApp/laravel-google-translate.svg?style=flat-rounded&colorB=brightgreen)](https://packagist.org/packages/JoggApp/laravel-google-translate)
+This is a fork of https://github.com/dstuchbury/laravel-google-translate - I did not create this package originally and take no credit for it.
+
+The composer.json `authors` element has been modified accordingly.
+
+![](https://github.com/dstuchbury/laravel-google-translate/workflows/Run%20Tests/badge.svg?branch=master)
 
 This package makes using the Google Translate API in your laravel app a breeze with minimum to no configuration, clean syntax and a consistent package API.
 
@@ -16,17 +15,17 @@ This package makes using the Google Translate API in your laravel app a breeze w
 - You can install this package via composer using this command:
 
 ```bash
-composer require joggapp/laravel-google-translate
+composer require dstuchbury/laravel-google-translate
 ```
 
 - The package will automatically register itself.
 
-- We have documented how to setup the project and get the necessary configurations from the Google Cloud Platform console in a step by step detailed manner [over here.](https://github.com/JoggApp/laravel-google-translate/blob/master/google.md)
+- We have documented how to setup the project and get the necessary configurations from the Google Cloud Platform console in a step by step detailed manner [over here.](https://github.com/dstuchbury/laravel-google-translate/blob/master/google.md)
 
 - You can publish the config file using the following command:
 
 ```bash
-php artisan vendor:publish --provider="JoggApp\GoogleTranslate\GoogleTranslateServiceProvider"
+php artisan vendor:publish --provider="dstuchbury\GoogleTranslate\GoogleTranslateServiceProvider"
 ```
 
 This will create the package's config file called `googletranslate.php` in the `config` directory. These are the contents of the published config file:
@@ -46,7 +45,7 @@ return [
     |
     | The process to get this file is documented in a step by step detailed manner
     | over here:
-    | https://github.com/JoggApp/laravel-google-translate/blob/master/google.md
+    | https://github.com/dstuchbury/laravel-google-translate/blob/master/google.md
     |-------------------------------------------------------------------------------
     */
     'api_key' => env('GOOGLE_TRANSLATE_API_KEY'),
@@ -124,7 +123,7 @@ Please see the [CHANGELOG](CHANGELOG.md) for more information about what has cha
 
 ## Security
 
-If you discover any security related issues, please email them to [harish@jogg.co](mailto:harish@jogg.co) instead of using the issue tracker.
+If you discover any security related issues, please email them to [dan@danstuchbury](mailto:dan@danstuchbury.com) instead of using the issue tracker.
 
 ## Credits
 
