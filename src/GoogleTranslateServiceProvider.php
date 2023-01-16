@@ -1,13 +1,13 @@
 <?php
 
-namespace JoggApp\GoogleTranslate;
+namespace DStuchbury\GoogleTranslate;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
 class GoogleTranslateServiceProvider extends ServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
         $this->publishes([
             __DIR__ . '/../config/googletranslate.php' => config_path('googletranslate.php'),
@@ -25,7 +25,7 @@ class GoogleTranslateServiceProvider extends ServiceProvider
         });
     }
 
-    public function register()
+    public function register(): void
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/googletranslate.php', 'googletranslate');
 

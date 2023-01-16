@@ -1,16 +1,16 @@
 <?php
 
-namespace JoggApp\GoogleTranslate;
+namespace DStuchbury\GoogleTranslate;
 
 use Exception;
 use Google\Cloud\Translate\V2\TranslateClient;
-use JoggApp\GoogleTranslate\Traits\SupportedLanguages;
+use DStuchbury\GoogleTranslate\Traits\SupportedLanguages;
 
 class GoogleTranslateClient
 {
     use SupportedLanguages;
 
-    private $translate;
+    private TranslateClient $translate;
 
     public function __construct(array $config)
     {
@@ -20,37 +20,37 @@ class GoogleTranslateClient
         ]);
     }
 
-    public function detectLanguage(string $text)
+    public function detectLanguage(string $text): array
     {
         return $this->translate
             ->detectLanguage($text);
     }
 
-    public function detectLanguageBatch(array $input)
+    public function detectLanguageBatch(array $input): array
     {
         return $this->translate
             ->detectLanguageBatch($input);
     }
 
-    public function translate(string $text, string $translateFrom, string $translateTo, string $format = 'text')
+    public function translate(string $text, string $translateFrom, string $translateTo, string $format = 'text'): array
     {
         return $this->translate
             ->translate($text, ['source' => $translateFrom, 'target' => $translateTo, 'format' => $format]);
     }
 
-    public function translateBatch(array $input, string $translateFrom, string $translateTo, string $format = 'text')
+    public function translateBatch(array $input, string $translateFrom, string $translateTo, string $format = 'text'): array
     {
         return $this->translate
             ->translateBatch($input, ['source' => $translateFrom, 'target' => $translateTo, 'format' => $format]);
     }
 
-    public function getAvailableTranslationsFor(string $languageCode)
+    public function getAvailableTranslationsFor(string $languageCode): array
     {
         return $this->translate
             ->localizedLanguages(['target' => $languageCode]);
     }
 
-    private function checkForInvalidConfiguration(array $config)
+    private function checkForInvalidConfiguration(array $config): void
     {
         if ( ! isset($config['api_key']) || $config['api_key'] === null) {
             throw new Exception('Google Api Key is required.');

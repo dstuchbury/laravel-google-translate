@@ -1,6 +1,6 @@
 <?php
 
-namespace JoggApp\GoogleTranslate\Traits;
+namespace DStuchbury\GoogleTranslate\Traits;
 
 trait SupportedLanguages
 {

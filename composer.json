@@ -13,7 +13,7 @@
     "authors": [
         {
             "name": "Harish Toshniwal",
-            "homepage": "https://github.com/JoggApp/laravel-google-translate",
+            "homepage": "https://github.com/DStuchbury/laravel-google-translate",
             "role": "original package creator"
         },
         {
@@ -24,12 +24,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "JoggApp\\GoogleTranslate\\": "src"
+            "DStuchbury\\GoogleTranslate\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "JoggApp\\GoogleTranslate\\Tests\\": "tests"
+            "DStuchbury\\GoogleTranslate\\Tests\\": "tests"
         }
     },
     "require": {
@@ -45,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "JoggApp\\GoogleTranslate\\GoogleTranslateServiceProvider"
+                "DStuchbury\\GoogleTranslate\\GoogleTranslateServiceProvider"
             ],
             "aliases":{
-                "GoogleTranslate": "JoggApp\\GoogleTranslate\\GoogleTranslateFacade"
+                "GoogleTranslate": "DStuchbury\\GoogleTranslate\\GoogleTranslateFacade"
             }
         }
     },
