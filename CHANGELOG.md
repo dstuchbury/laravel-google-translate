@@ -1,5 +1,8 @@
 All the notable changes to the Laravel Google Translate package are documented in this file:
 
+## 7.0.1 (24-01-2021)
+- Update namespace following fork.
+
 ## 7.0.0 (24-01-2021)
 - Add PHP 8 Support
 - Drop PHP 7.3 Support

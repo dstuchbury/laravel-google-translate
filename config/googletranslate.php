@@ -14,7 +14,7 @@ return [
       |
       | The process to get this file is documented in a step by step detailed manner
       | over here:
-      | https://github.com/JoggApp/laravel-google-translate/blob/master/google.md
+      | https://github.com/DStuchbury/laravel-google-translate/blob/master/google.md
       |-------------------------------------------------------------------------------
       */
     'api_key' => env('GOOGLE_TRANSLATE_API_KEY'),

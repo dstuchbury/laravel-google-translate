@@ -1,10 +1,10 @@
 <?php
 
-namespace JoggApp\GoogleTranslate;
+namespace DStuchbury\GoogleTranslate;
 
 use Exception;
 use InvalidArgumentException;
-use JoggApp\GoogleTranslate\Traits\SupportedLanguages;
+use DStuchbury\GoogleTranslate\Traits\SupportedLanguages;
 
 class GoogleTranslate
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace JoggApp\GoogleTranslate\Tests;
+namespace DStuchbury\GoogleTranslate\Tests;
 
-use JoggApp\GoogleTranslate\GoogleTranslate;
-use JoggApp\GoogleTranslate\GoogleTranslateClient;
+use DStuchbury\GoogleTranslate\GoogleTranslate;
+use DStuchbury\GoogleTranslate\GoogleTranslateClient;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
